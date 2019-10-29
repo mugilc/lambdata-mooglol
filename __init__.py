@@ -23,3 +23,9 @@ def train_validation_test_split(
         random_state=random_state, shuffle=shuffle)
 
     return X_train, X_val, X_test, y_traein, y_val, y_test
+
+def is_null(df, sum=False):
+    nulls = (df != df)
+    if sum is True:
+        return nulls.sum()
+    return nulls
