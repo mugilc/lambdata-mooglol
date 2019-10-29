@@ -22,7 +22,7 @@ def train_validation_test_split(
         X_train_val, y_train_val, test_size=val_size/(train_size+val_size),
         random_state=random_state, shuffle=shuffle)
 
-    return X_train, X_val, X_test, y_traein, y_val, y_test
+    return X_train, X_val, X_test, y_train, y_val, y_test
 
 def is_null(df, sum=False):
     nulls = (df != df)
