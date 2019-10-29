@@ -3,27 +3,29 @@ lambdata-mooglol - a collection of data science helper functions
 """
 
 import setuptools
-​
+
 REQUIRED = [
     "numpy",
     "pandas"
 ]
-​
+
 with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
-    setuptools.setup(
+
+setuptools.setup(
     name="lambdata-mooglol",
-    version = "0.1.1",
-    author = "mooglol",
-    description = "a collection of data science helper functions",
-    long_description = LONG_DESCRIPTION,
+    version="0.0.1",
+    author="mooglol",
+    description="a collection of data science helper functions",
+    long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://lambdaschool.com/courses/data-science",
+    url="https://github.com/mooglol/lambdata-mooglol",
     packages=setuptools.find_packages(),
     python_requires=">=3.5",
-    install_requires = REQUIRED,
-    classifiers=["Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    ]
-    )
+    install_required=REQUIRED,
+    classifiers=[
+        "Programming Language :: Python :: 3".
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+)
