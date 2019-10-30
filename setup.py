@@ -13,8 +13,8 @@ with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
 
 setuptools.setup(
-    name="lambdata-mooglol",
-    version="0.0.1",
+    name="lambdata_mooglol",
+    version="0.0.2",
     author="mooglol",
     description="a collection of data science helper functions",
     long_description=LONG_DESCRIPTION,
